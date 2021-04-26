@@ -1,3 +1,4 @@
+import 'package:CW/screens/product_feed.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(),
+      home:MyHomePage(),
     );
   }
 }
@@ -25,13 +26,6 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text("CW"),
-      ),
-      body: Center(
-        child: Text(""),
-      ),
-    );
+    return ProductFeed();
   }
 }
